@@ -13,7 +13,7 @@ def depth(flow, confidence, ep, K, thres=10):
     depth_map = np.zeros_like(confidence)
 
     """
-    STUDENT CODE BEGINS
+
     """
     K_inverse = np.linalg.inv(K)
 
@@ -43,7 +43,6 @@ def depth(flow, confidence, ep, K, thres=10):
     depth_map[confidence < thres] = 0
 
     """
-    STUDENT CODE ENDS
     """
 
     truncated_depth_map = np.maximum(depth_map, 0)

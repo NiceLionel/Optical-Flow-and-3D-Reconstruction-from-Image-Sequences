@@ -15,9 +15,6 @@ def epipole(u,v,smin,thresh,num_iterations = 1000):
     '''
 
     """
-    You can do the thresholding on smin using thresh outside the RANSAC loop here. 
-    Make sure to keep some way of going from the indices of the arrays you get below back to the indices of a flattened u/v/smin
-    STUDENT CODE BEGINS
     """
     height,width = u.shape[0], u.shape[1]
     u_valid = u[smin>thresh].flatten()
@@ -31,7 +28,6 @@ def epipole(u,v,smin,thresh,num_iterations = 1000):
     y_valid = y[smin>thresh].flatten()
     valid_index = np.arange(0,len(x.flatten()))[smin.flatten()>thresh]
     """ 
-    STUDENT CODE ENDS
     """
 
     sample_size = 2

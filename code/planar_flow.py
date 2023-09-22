@@ -13,7 +13,7 @@ def compute_planar_params(flow_x, flow_y, K,
         sol: np.array(8,)
     """
     """
-    STUDENT CODE BEGINS
+
     """
     global A, B
     height = flow_x.shape[0]
@@ -54,7 +54,6 @@ def compute_planar_params(flow_x, flow_y, K,
     # solve Ax = b
     sol = np.linalg.lstsq(A, B, rcond = None)[0].flatten()
     """
-    STUDENT CODE ENDS
     """
     return sol
     

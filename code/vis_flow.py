@@ -16,7 +16,6 @@ def plot_flow(image, flow_image, confidence, threshmin=10):
     """
 
     """
-    STUDENT CODE BEGINS
     """
     height, width = image.shape[0], image.shape[1]
     x, y = np.meshgrid(np.arange(0,width),np.arange(0,height))
@@ -25,7 +24,6 @@ def plot_flow(image, flow_image, confidence, threshmin=10):
     # plt.quiver(x,y,(i*10).astype(int),(j*10).astype(int),angles='xy', scale_units='xy', scale=1.,width=0.001, color='red')
     # plt.imshow(image)
     """
-    STUDENT CODE ENDS
     """
     
     plt.quiver(x, y, (flow_x * 10).astype(int), (flow_y * 10).astype(int), angles='xy', scale_units='xy', scale=1.,

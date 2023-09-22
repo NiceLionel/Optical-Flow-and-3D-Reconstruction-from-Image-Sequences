@@ -14,7 +14,7 @@ def flow_lk_patch(Ix, Iy, It, x, y, size=5):
         conf: np.array(1,)
     """
     """
-    STUDENT CODE BEGINS
+
     """
     height, width = Ix.shape[0], Ix.shape[1]
     y_neigh_index = np.array([y - 2, y - 1, y, y + 1, y + 2])
@@ -35,7 +35,7 @@ def flow_lk_patch(Ix, Iy, It, x, y, size=5):
     flow = x.reshape(2,)
     conf = np.min(s)
     """
-    STUDENT CODE ENDS
+
     """
     return flow, conf
 
